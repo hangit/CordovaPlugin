@@ -1,0 +1,70 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "*-Info.plist": {
+                "parents": {
+                    "NSLocationAlwaysUsageDescription": [
+                        {
+                            "xml": "<string>We offer great deals at places near you, so let us know where you are. We’ll never spam you.</string>",
+                            "count": 1
+                        }
+                    ],
+                    "UIBackgroundModes": [
+                        {
+                            "xml": "<array><string>fetch</string><string>location</string></array>",
+                            "count": 1
+                        }
+                    ],
+                    "HANGIT_API_ID": [
+                        {
+                            "xml": "<string>a905ddca3dde20e96094a1711c70e247</string>",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"HangitCordovaPlugin\"><param name=\"ios-package\" value=\"HangitCordovaPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<preference name=\"deployment-target\" value=\"8.1\" />",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.hangit.hangitTest"
+        },
+        "com.hangit.cordova": {
+            "HANGIT_ID": "a905ddca3dde20e96094a1711c70e247",
+            "PACKAGE_NAME": "com.hangit.hangitTest"
+        }
+    },
+    "dependent_plugins": {},
+    "modules": [
+        {
+            "id": "com.hangit.cordova.Hangit",
+            "file": "plugins/com.hangit.cordova/www/hangit.js",
+            "pluginId": "com.hangit.cordova",
+            "clobbers": [
+                "hangit"
+            ]
+        }
+    ],
+    "plugin_metadata": {
+        "cordova-plugin-whitelist": "1.2.2",
+        "com.hangit.cordova": "1.9.0"
+    }
+}
