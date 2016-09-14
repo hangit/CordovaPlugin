@@ -2,7 +2,8 @@
     var exec = require('cordova/exec');
 
     var hangit = {
-        init:function(arguments, successCallback, failCallback) {
+        init:function(hangitAppId, successCallback, failCallback) {
+            var arguments = {"hangitAppId":hangitAppId};
             exec(successCallback, failCallback, "HangitCordovaPlugin", "init", [arguments]);
         },
         start:function( successCallback, failCallback) {

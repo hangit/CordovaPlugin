@@ -22,12 +22,6 @@
 
     <platform name="ios">
 
-        <!-- required background modes:  App registers for location updates -->
-        <!--
-        <config-file target="*-Info.plist" parent="NSLocationWhenInUseUsageDescription">
-            <string>We offer great deals at places near you, so let us know where you are. We’ll never spam you.</string>
-        </config-file>
-        -->
         <config-file target="*-Info.plist" parent="NSLocationAlwaysUsageDescription">
             <string>We offer great deals at places near you, so let us know where you are. We’ll never spam you.</string>
         </config-file>
@@ -38,11 +32,7 @@
                 <string>location</string>
             </array>
         </config-file>
-        
-        <config-file target="*-Info.plist" parent="HANGIT_API_ID">
-          <string>$HANGIT_ID</string>
-        </config-file>
-        
+
         <config-file target="config.xml" parent="/*">
             <feature name="HangitCordovaPlugin">
                 <param name="ios-package" value="HangitCordovaPlugin" />
@@ -50,11 +40,6 @@
             </feature>
             <preference name="deployment-target" value="8.1" />
         </config-file>
-        
-        <!--
-        <header-file src="src/ios/CDVViewController+hangit.h" />
-        <source-file src="src/ios/CDVViewController+hangit.m" />
-        -->
         
         <header-file src="src/ios/AppDelegate+hangit.h"/>
         <source-file src="src/ios/AppDelegate+hangit.m"/>

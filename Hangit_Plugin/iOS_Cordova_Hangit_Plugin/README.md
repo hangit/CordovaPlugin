@@ -24,6 +24,10 @@ This plugins support for IOS (Android is on it's way).
     var hangitConfig = {};
     hangitConfig.publicKey = "YOUR KEY GOES HERE"; //put your public key here
 
+
+^^^^ make that say APP ID -- not publicKey
+
+
     var success = function(message) {
       // alert(message);
       // Add your logging here... 
