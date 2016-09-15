@@ -15,7 +15,7 @@
     
 
     NSString* callbackId = [command callbackId];
-    NSString* name = [[[command arguments] objectAtIndex:0] objectForKey:@"publicKey"];
+    NSString* name = [[[command arguments] objectAtIndex:0] objectForKey:@"hangitAppId"];
 
 
     NSString* msg = [NSString stringWithFormat: @"Initialized the Hangit SDK Services..., %@", name];

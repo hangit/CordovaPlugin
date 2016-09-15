@@ -9,7 +9,7 @@ Get location based notifications in your Cordova/Ionic app!
 This plugins requires PhoneGap 3.8.0 or higher.
 This plugins support for IOS (Android is on it's way).
 
-### Installation ###
+### Installation and Useage ###
 ```
 (1) Clone the iOS_Cordova_Hangit_Plugin
 
@@ -17,39 +17,25 @@ This plugins support for IOS (Android is on it's way).
 
 (3) execute on the command line: cordova plugin add ../iOS_Cordova_Hangit_Plugin
 
-(4) Add the following snippet to the javascript that is called upon your applications initialization, this will initialize Hangit:
-
-
- // Initialize the HangitPlugin
-    var hangitConfig = {};
-    hangitConfig.publicKey = "YOUR KEY GOES HERE"; //put your public key here
-
-
-^^^^ make that say APP ID -- not publicKey
-
-
-    var success = function(message) {
-      // alert(message);
-      // Add your logging here... 
-    }
-
-    var failure = function() {
-      //alert("Error calling Hangit Plugin");
-      // Add your logging here... 
-    }
-
-    hangit.init(hangitConfig, success, failure);
+(4) In your javascript, initialize hangit by calling hangit.init()
+    Pass your hangit app ID (a key that you obtain by contacting hangit) as the first parameter when calling hangit.init()
+    hangit.init("your hangit app ID here", success, failure);
 
 (5) Start the location services for hangit:
     hangit.start(success, failure);
 
+(6) You can manually stop the location services for hangit on demand:
+    hangit.stop(success, failure);
+    
+(7) After initializing you can trigger the wallet by calling hangit.deals:
+    hangit.deals(success, failure);
 
 
-Open your iOS project (you will need to perform two project configuration settings)
-1. Set Deployment Target to 8.0
-2. Add the Hangit.framework in the Embedded Binaries
+IMPORTANT FOR IOS USERS:
+Once you have built your hangit project, you will need to add the HangitSDK.framework as an embedded framework.  Do this by opening the iOS project in xCode (double click the .xcproj file that cordova generates in /platforms/ios/). Select your project target and in the 'General' tab scroll down to the section titled "Embedded Binaries".  Click the + button and in the subsequent dialog find HangitSDK.framework and click "Add"
+
 ```
-You can obtain the public key at: http://portal.hangit.com
+You can obtain your  at: http://portal.hangit.com
 
 ### More information ###
 Website: http://www.hangit.com/

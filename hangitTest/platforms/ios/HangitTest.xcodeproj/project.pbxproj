@@ -355,6 +355,7 @@
 				GCC_VERSION = "";
 				INFOPLIST_FILE = "HangitTest/HangitTest-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.macsolving.hangitTest;
 				PRODUCT_NAME = HangitTest;
 			};
 			name = Debug;
@@ -380,6 +381,7 @@
 				GCC_VERSION = "";
 				INFOPLIST_FILE = "HangitTest/HangitTest-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.macsolving.hangitTest;
 				PRODUCT_NAME = HangitTest;
 			};
 			name = Release;
