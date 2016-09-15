@@ -24,6 +24,8 @@
 
 @property (nonatomic, retain) NSString * mediaURL;
 
+@property (nonatomic, retain) NSString * mediaURLWide;
+
 @property (nonatomic, retain) NSString * mediaImgURL;
 
 @property (nonatomic, retain) NSString * mediaTitle;
