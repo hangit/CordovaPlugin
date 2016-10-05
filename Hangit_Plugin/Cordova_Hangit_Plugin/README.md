@@ -7,15 +7,14 @@ Get location based notifications in your Cordova/Ionic app!
 ### Supported platforms ###
 
 This plugins requires PhoneGap 3.8.0 or higher.
-This plugins support for IOS (Android is on it's way).
 
 ### Installation and Usage ###
 ```
-(1) Clone the iOS_Cordova_Hangit_Plugin
+(1) Clone the Cordova_Hangit_Plugin
 
 (2) cd into YOUR Project root
 
-(3) execute on the command line: cordova plugin add ../iOS_Cordova_Hangit_Plugin
+(3) execute on the command line: cordova plugin add ../Cordova_Hangit_Plugin
 
 (4) In your javascript, initialize hangit by calling hangit.init()
     Pass your hangit app ID (a key that you obtain by contacting hangit) as the first parameter when calling hangit.init()
