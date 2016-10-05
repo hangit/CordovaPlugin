@@ -14,8 +14,12 @@ cordova create barebonesProject com.hangit.barebonesProject BarebonesProject
 
 cd barebonesProject
 
-cordova plugin add ../Hangit_Plugin/iOS_Cordova_Hangit_Plugin
+cordova plugin add ../Hangit_Plugin/Cordova_Hangit_Plugin
 
 cordova platform add ios
 
+cordova platform add android
+
 cordova build ios
+
+cordova build android
