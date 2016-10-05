@@ -15,10 +15,6 @@
         <param name="ios-package" value="CDVGestureHandler" />
         <param name="onload" value="true" />
     </feature>
-    <feature name="HangitCordovaPlugin">
-        <param name="ios-package" value="HangitCordovaPlugin" />
-        <param name="onload" value="true" />
-    </feature>
     <name>HangitTestProject</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.
@@ -49,5 +45,9 @@
     <preference name="PageLength" value="0" />
     <preference name="PaginationBreakingMode" value="page" />
     <preference name="PaginationMode" value="unpaginated" />
+    <feature name="HangitCordovaPlugin">
+        <param name="ios-package" value="HangitCordovaPlugin" />
+        <param name="onload" value="true" />
+    </feature>
     <preference name="deployment-target" value="8.1" />
 </widget>

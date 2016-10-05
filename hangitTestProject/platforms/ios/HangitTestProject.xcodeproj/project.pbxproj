@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0207DA571B56EA530066E2B4 /* Images.xcassets */; };
 		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
@@ -14,13 +13,11 @@
 		301BF552109A68D80062928A /* libCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 301BF535109A57CC0062928A /* libCordova.a */; };
 		302D95F114D2391D003F00A1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 302D95EF14D2391D003F00A1 /* MainViewController.m */; };
 		302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 302D95F014D2391D003F00A1 /* MainViewController.xib */; };
-		335EA1031D8A47C000660F7B /* HangitSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4CF799FCBFB45E2867BB825 /* HangitSDK.framework */; };
-		335EA1041D8A47C000660F7B /* HangitSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A4CF799FCBFB45E2867BB825 /* HangitSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		355F6955243C47E18EFDF721 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B8C337B966243AA8995CCEB /* CoreLocation.framework */; };
-		41687BEA972F463AA3951674 /* AppDelegate+hangit.m in Sources */ = {isa = PBXBuildFile; fileRef = E96B92A48A8C4752B5F65994 /* AppDelegate+hangit.m */; };
-		9CDF2108D7BB4D8F9D6B4387 /* HangitSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4CF799FCBFB45E2867BB825 /* HangitSDK.framework */; };
-		AC9BA67EB16347C7B4E220AC /* HangitCordovaPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC579EBF89442AEB11F87A0 /* HangitCordovaPlugin.m */; };
-		D89D36059C9046DBB64855AA /* HangitSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BD7FF3209BAE458386A64D6F /* HangitSDKResources.bundle */; };
+		7DD143F9441D4095BC37A972 /* AppDelegate+hangit.m in Sources */ = {isa = PBXBuildFile; fileRef = 830C8C660291448D95FAB8DD /* AppDelegate+hangit.m */; };
+		D6AF0745962F4A9EB2D9BEE8 /* HangitCordovaPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = C41923F375904352B83EEF35 /* HangitCordovaPlugin.m */; };
+		410BBF8D354D43BC9AB51FF3 /* HangitSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 848B3557FA024243A550406B /* HangitSDKResources.bundle */; };
+		3A3F9FE88A5A41E386237126 /* HangitSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E3904180A3A4C398218B790 /* HangitSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +45,8 @@
 			dstSubfolderSpec = 10;
 			files = (
 				335EA1041D8A47C000660F7B /* HangitSDK.framework in Embed Frameworks */,
+				040D402A5C66489E83DADA79 /* HangitSDK.framework in Frameworks */,
+				3A3F9FE88A5A41E386237126 /* HangitSDK.framework in Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -59,7 +58,6 @@
 		1D3623240D0F684500981E51 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		1D6058910D05DD3D006BFB54 /* HangitTestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HangitTestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1F4E1B0374BF442780D9E313 /* AppDelegate+hangit.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = "AppDelegate+hangit.h"; path = "com.hangit.cordova/AppDelegate+hangit.h"; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CordovaLib.xcodeproj; path = CordovaLib/CordovaLib.xcodeproj; sourceTree = "<group>"; };
 		301BF56E109A69640062928A /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = SOURCE_ROOT; };
@@ -73,15 +71,16 @@
 		7B8C337B966243AA8995CCEB /* CoreLocation.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		8D1107310486CEB800E47090 /* HangitTestProject-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "HangitTestProject-Info.plist"; path = "HangitTestProject/HangitTestProject-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = SOURCE_ROOT; };
 		98F834755FA64E0181ED79E2 /* MessageUI.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
-		A4CF799FCBFB45E2867BB825 /* HangitSDK.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = HangitSDK.framework; path = HangitTestProject/Plugins/com.hangit.cordova/HangitSDK.framework; sourceTree = "<group>"; };
-		A5CDA2CFF15E469EABAE26CD /* HangitCordovaPlugin.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = HangitCordovaPlugin.h; path = com.hangit.cordova/HangitPlugin/HangitCordovaPlugin.h; sourceTree = "<group>"; };
-		BD7FF3209BAE458386A64D6F /* HangitSDKResources.bundle */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.plug-in"; path = HangitSDKResources.bundle; sourceTree = "<group>"; };
-		DDC579EBF89442AEB11F87A0 /* HangitCordovaPlugin.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = HangitCordovaPlugin.m; path = com.hangit.cordova/HangitPlugin/HangitCordovaPlugin.m; sourceTree = "<group>"; };
-		E96B92A48A8C4752B5F65994 /* AppDelegate+hangit.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = "AppDelegate+hangit.m"; path = "com.hangit.cordova/AppDelegate+hangit.m"; sourceTree = "<group>"; };
 		EB87FDF31871DA8E0020F90C /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = ../../www; sourceTree = "<group>"; };
 		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
 		ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = HangitTestProject/config.xml; sourceTree = "<group>"; };
+		830C8C660291448D95FAB8DD /* AppDelegate+hangit.m */ = {isa = PBXFileReference; name = "AppDelegate+hangit.m"; path = "com.hangit.cordova/AppDelegate+hangit.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		C41923F375904352B83EEF35 /* HangitCordovaPlugin.m */ = {isa = PBXFileReference; name = "HangitCordovaPlugin.m"; path = "com.hangit.cordova/HangitPlugin/HangitCordovaPlugin.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		46CCFEF9F12D41EEA563B5BF /* AppDelegate+hangit.h */ = {isa = PBXFileReference; name = "AppDelegate+hangit.h"; path = "com.hangit.cordova/AppDelegate+hangit.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		C6CCB07A19BD4602A43381AB /* HangitCordovaPlugin.h */ = {isa = PBXFileReference; name = "HangitCordovaPlugin.h"; path = "com.hangit.cordova/HangitPlugin/HangitCordovaPlugin.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		848B3557FA024243A550406B /* HangitSDKResources.bundle */ = {isa = PBXFileReference; name = "HangitSDKResources.bundle"; path = "HangitSDKResources.bundle"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.plug-in; explicitFileType = undefined; includeInIndex = 0; };
+		2E3904180A3A4C398218B790 /* HangitSDK.framework */ = {isa = PBXFileReference; name = "HangitSDK.framework"; path = "HangitTestProject/Plugins/com.hangit.cordova/HangitSDK.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,11 +88,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				335EA1031D8A47C000660F7B /* HangitSDK.framework in Frameworks */,
 				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
 				355F6955243C47E18EFDF721 /* CoreLocation.framework in Frameworks */,
 				234FD73BD34F432EAF682553 /* MessageUI.framework in Frameworks */,
-				9CDF2108D7BB4D8F9D6B4387 /* HangitSDK.framework in Frameworks */,
+				040D402A5C66489E83DADA79 /* HangitSDK.framework in Frameworks */,
+				3A3F9FE88A5A41E386237126 /* HangitSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,7 +154,7 @@
 				0207DA571B56EA530066E2B4 /* Images.xcassets */,
 				3047A50E1AB8057F00498E2A /* config */,
 				8D1107310486CEB800E47090 /* HangitTestProject-Info.plist */,
-				BD7FF3209BAE458386A64D6F /* HangitSDKResources.bundle */,
+				848B3557FA024243A550406B /* HangitSDKResources.bundle */,
 			);
 			name = Resources;
 			path = HangitTestProject/Resources;
@@ -166,7 +165,7 @@
 			children = (
 				7B8C337B966243AA8995CCEB /* CoreLocation.framework */,
 				98F834755FA64E0181ED79E2 /* MessageUI.framework */,
-				A4CF799FCBFB45E2867BB825 /* HangitSDK.framework */,
+				2E3904180A3A4C398218B790 /* HangitSDK.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -192,10 +191,10 @@
 		307C750510C5A3420062BCA9 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
-				E96B92A48A8C4752B5F65994 /* AppDelegate+hangit.m */,
-				DDC579EBF89442AEB11F87A0 /* HangitCordovaPlugin.m */,
-				1F4E1B0374BF442780D9E313 /* AppDelegate+hangit.h */,
-				A5CDA2CFF15E469EABAE26CD /* HangitCordovaPlugin.h */,
+				830C8C660291448D95FAB8DD /* AppDelegate+hangit.m */,
+				C41923F375904352B83EEF35 /* HangitCordovaPlugin.m */,
+				46CCFEF9F12D41EEA563B5BF /* AppDelegate+hangit.h */,
+				C6CCB07A19BD4602A43381AB /* HangitCordovaPlugin.h */,
 			);
 			name = Plugins;
 			path = HangitTestProject/Plugins;
@@ -280,7 +279,7 @@
 			files = (
 				302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */,
 				0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */,
-				D89D36059C9046DBB64855AA /* HangitSDKResources.bundle in Resources */,
+				410BBF8D354D43BC9AB51FF3 /* HangitSDKResources.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,8 +311,8 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
-				41687BEA972F463AA3951674 /* AppDelegate+hangit.m in Sources */,
-				AC9BA67EB16347C7B4E220AC /* HangitCordovaPlugin.m in Sources */,
+				7DD143F9441D4095BC37A972 /* AppDelegate+hangit.m in Sources */,
+				D6AF0745962F4A9EB2D9BEE8 /* HangitCordovaPlugin.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,6 +342,8 @@
 					HangitTestProject/Plugins/com.hangit.cordova,
 					HangitTestProject/Plugins/com.hangit.cordova,
 					"$(PROJECT_DIR)/HangitTestProject/Plugins/com.hangit.cordova",
+					"\"HangitTestProject/Plugins/com.hangit.cordova\"",
+					"\"HangitTestProject/Plugins/com.hangit.cordova\"",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -372,6 +373,8 @@
 					HangitTestProject/Plugins/com.hangit.cordova,
 					HangitTestProject/Plugins/com.hangit.cordova,
 					"$(PROJECT_DIR)/HangitTestProject/Plugins/com.hangit.cordova",
+					"\"HangitTestProject/Plugins/com.hangit.cordova\"",
+					"\"HangitTestProject/Plugins/com.hangit.cordova\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HangitTestProject/HangitTestProject-Prefix.pch";

@@ -1,0 +1,139 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "res/xml/config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"Whitelist\"><param name=\"android-package\" value=\"org.apache.cordova.whitelist.WhitelistPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"HangitCordovaPlugin\"><param name=\"android-package\" value=\"com.hangit.plugins.hangitcordovaplugin.HangitCordovaPlugin\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "AndroidManifest.xml": {
+                "parents": {
+                    "/manifest/application": [
+                        {
+                            "xml": "<service android:name=\"com.hangit.android.hangit_sdk.ServiceHangITLocation\"><meta-data android:name=\"com.hangit.android.hangit_sdk.notification_icon\" android:value=\"ic_launcher\" /><meta-data android:name=\"com.hangit.android.hangit_sdk.notification_activity\" android:value=\"com.hangit.android.hangit_sdk.UIWebViewActivity\" /><meta-data android:name=\"com.hangit.android.hangit_sdk.appnext_notification_activity\" android:value=\"com.hangit.android.hangit_sdk.UIAppNextActivity\" /><meta-data android:name=\"com.hangit.android.hangit_sdk.notification_back_activity\" android:value=\"com.hangit.android.hangit_sdk.NotificationBackActivity\" /></service>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<service android:name=\"com.hangit.android.hangit_sdk.ServiceActivityRecognition\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<service android:name=\"com.hangit.android.hangit_sdk.ServiceBeacon\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<receiver android:name=\"com.hangit.android.hangit_sdk.ReceiverBootup\"><intent-filter><action android:name=\"android.intent.action.BOOT_COMPLETED\" /><action android:name=\"android.intent.action.QUICKBOOT_POWERON\" /></intent-filter></receiver>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<activity android:name=\".OfferNotificationActivity\"></activity>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<activity android:name=\"com.hangit.android.hangit_sdk.UIWebViewActivity\"></activity>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<activity android:name=\"com.hangit.android.hangit_sdk.UIMapActivity\" android:screenOrientation=\"portrait\"></activity>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<activity android:name=\"com.hangit.android.hangit_sdk.UIBackgroundActivity\" android:screenOrientation=\"portrait\"></activity>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<activity android:name=\"com.hangit.android.hangit_sdk.UINotificationBackActivity\"></activity>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<activity android:name=\"com.hangit.android.hangit_sdk.UIAppNextActivity\" android:screenOrientation=\"portrait\"></activity>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<activity android:name=\"com.hangit.android.hangit_sdk.UIWalletActivity\" android:screenOrientation=\"portrait\"></activity>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<service android:exported=\"false\" android:name=\"com.estimote.sdk.service.BeaconService\" />",
+                            "count": 1
+                        }
+                    ],
+                    "/manifest": [
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.INTERNET\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.READ_PHONE_STATE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"com.google.android.providers.gsf.permission.READ_GSERVICES\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"com.google.android.gms.permission.ACTIVITY_RECOGNITION\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.RECEIVE_BOOT_COMPLETED\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<meta-data android:name=\"com.google.android.gms.version\" android:value=\"@integer/google_play_services_version\" />",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.hangit.hangitTestProject"
+        },
+        "com.hangit.cordova": {
+            "PACKAGE_NAME": "com.hangit.hangitTestProject"
+        }
+    },
+    "dependent_plugins": {},
+    "modules": [
+        {
+            "id": "com.hangit.cordova.Hangit",
+            "file": "plugins/com.hangit.cordova/www/hangit.js",
+            "pluginId": "com.hangit.cordova",
+            "clobbers": [
+                "hangit"
+            ]
+        }
+    ],
+    "plugin_metadata": {
+        "cordova-plugin-whitelist": "1.3.0",
+        "com.hangit.cordova": "1.9.0"
+    }
+}

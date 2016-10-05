@@ -38,10 +38,10 @@
         }
     },
     "installed_plugins": {
-        "com.hangit.cordova": {
+        "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "com.hangit.hangitTestProject"
         },
-        "cordova-plugin-whitelist": {
+        "com.hangit.cordova": {
             "PACKAGE_NAME": "com.hangit.hangitTestProject"
         }
     },
@@ -57,7 +57,7 @@
         }
     ],
     "plugin_metadata": {
-        "com.hangit.cordova": "1.9.0",
-        "cordova-plugin-whitelist": "1.3.0"
+        "cordova-plugin-whitelist": "1.3.0",
+        "com.hangit.cordova": "1.9.0"
     }
 }
