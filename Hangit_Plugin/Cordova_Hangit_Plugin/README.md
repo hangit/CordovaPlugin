@@ -34,7 +34,7 @@ IMPORTANT FOR IOS USERS:
 Once you have built your hangit project, you will need to add the HangitSDK.framework as an embedded framework.  Do this by opening the iOS project in xCode (double click the .xcproj file that cordova generates in /platforms/ios/). Select your project target and in the 'General' tab scroll down to the section titled "Embedded Binaries".  Click the + button and in the subsequent dialog find HangitSDK.framework and click "Add"
 
 ```
-You can obtain your  at: http://portal.hangit.com
+You can obtain your apikey at: http://portal.hangit.com
 
 ### More information ###
 Website: http://www.hangit.com/
